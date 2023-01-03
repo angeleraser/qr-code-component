@@ -1,0 +1,67 @@
+.qr-card {
+  width: 100%;
+  max-width: 320px;
+  background-color: var(--white);
+  padding: 18px;
+  border-radius: 16px;
+  height: 100%;
+  max-height: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: var(--base-fs);
+  font-family: var(--font-outfit);
+  text-align: center;
+}
+
+.qr-code-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 60%;
+  background-color: var(--blue);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.qr-code-wrapper::before,
+.qr-code-wrapper::after {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.qr-code-wrapper::before {
+  translate: -100px -110px;
+}
+
+.qr-code-wrapper::after {
+  translate: 140px 170px;
+}
+
+.qr-code-image {
+  width: 60%;
+  height: 60%;
+  z-index: 1;
+}
+
+.qr-card-content {
+  padding: 0 8px;
+  line-height: 1.25;
+}
+
+.qr-card-title {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.qr-card-description {
+  color: var(--grayish-blue);
+}

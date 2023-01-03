@@ -1,0 +1,16 @@
+@import url("./reset.min.css");
+@import url("./variables.css");
+@import url("./qr-card.css");
+
+#app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  background-color: var(--light-gray);
+  padding: 0 26px;
+}
